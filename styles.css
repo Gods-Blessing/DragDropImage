@@ -1,0 +1,109 @@
+/* Write your desired css here */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.carousel{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: red;
+    z-index: 1;
+}
+
+.carousel-items{
+    width: auto;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.carousel-items::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-items > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.app-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.main-app{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: none;
+    padding: 20px;
+    width: 40%;
+    /* height: 400px; */
+    backdrop-filter: blur(5px);
+}
+
+#heading-main{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    color: orangered;
+}
+
+.img-input > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed orange;
+    height: 150px;
+    cursor: pointer;
+}
+
+#fileInput{
+    display: none;
+}
+
+#fileList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.file-name{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thumbnail{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-description{
+    padding: 10px;
+}
